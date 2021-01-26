@@ -24,7 +24,5 @@ def add_expense():
         writer_object.writerow(expense_list)
         file.close()
 
-    print(f"\n\033[96m {expense_occurence.title()} expense {expense_name} \n has been added to the {expense_category} category.\n")
+    print(f"\n\n\033[96m {expense_occurence.title()} expense {expense_name} \n has been added to the {expense_category} category.\n")
 
-def create_expense_category():
-    # Todo: create function that creates a list of expense categories adds them to the csv or db.

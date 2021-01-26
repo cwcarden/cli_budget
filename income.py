@@ -23,4 +23,4 @@ def add_income():
         writer_object.writerow(income_list)
         file.close()
 
-    print(f"Income {income_name} has been added to the {income_category} category .\n")
+    print(f"\n\n\033[96mIncome {income_name} has been added to the {income_category} category .\n")
