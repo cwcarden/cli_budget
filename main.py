@@ -8,7 +8,8 @@ def welcome():
     while True:
         print("\n                    Welcome to CLI Budget\n")
         print("Select an Option\n")
-        selection = input("(E) Add a New Expense\n (I) Add a new Income\n(V) View current Budget\n(EB) Edit Budget\n(L or anything else) To Exit\n").upper()
+        selection = input("(E) Add a New Expense\n(I) Add a New Income\n(V) View Budget\n(B) Edit Budget\n(A or Ctrl "
+                          "C) To Abort\n").upper()
         if selection == 'E':
             add_expense()
 

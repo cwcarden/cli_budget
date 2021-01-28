@@ -2,7 +2,7 @@ import csv
 from date_calcs import obtain_date
 
 def add_expense():
-    expense_name = input("Please enter the expense name: ").upper()
+    expense_name = input("\u001b[33mPlease enter the expense name: ").upper()
     expense_category = input("Please enter an expense category: ").upper()
     expense_occurence = input("Is this a (w)weekly, (b)biweekly, or (m)monthly reoccurring expense?").upper()
 
@@ -24,5 +24,5 @@ def add_expense():
         writer_object.writerow(expense_list)
         file.close()
 
-    print(f"\n\n\033[96m {expense_occurence.title()} expense {expense_name} \n has been added to the {expense_category} category.\n")
+    print(f"\n{expense_occurence.title()} expense {expense_name} \n has been added to the {expense_category} category.\n")
 

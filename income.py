@@ -2,7 +2,7 @@ import csv
 from date_calcs import obtain_date
 
 def add_income():
-    income_name = input("Please enter the income source name: ").upper()
+    income_name = input("\n\033[96mPlease enter the income source name: ").upper()
     income_category = input("Please enter an income category name: ").upper()
     income_occurence = input("Is this a (w)weekly, (b)biweekly, or (m)monthly reoccurring income?").upper()
 
@@ -23,4 +23,4 @@ def add_income():
         writer_object.writerow(income_list)
         file.close()
 
-    print(f"\n\n\033[96mIncome {income_name} has been added to the {income_category} category .\n")
+    print(f"\nIncome {income_name} has been added to the {income_category} category .\n")
