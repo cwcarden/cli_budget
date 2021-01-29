@@ -26,3 +26,4 @@ def add_expense():
 
     print(f"\n{expense_occurence.title()} expense {expense_name} \n has been added to the {expense_category} category.\n")
 
+#git test comment 
