@@ -4,7 +4,7 @@ from date_calcs import obtain_date
 def add_expense():
     expense_name = input("\u001b[33mPlease enter the expense name: ").upper()
     expense_category = input("Please enter an expense category: ").upper()
-    expense_occurence = input("Is this a (w)weekly, (b)biweekly, or (m)monthly reoccurring expense?").upper()
+    expense_occurence = input("Is this a (w)weekly, (b)biweekly, or (m)monthly reoccurring expense? ").upper()
 
     if expense_occurence == 'W':
         expense_occurence = 'WEEKLY'
