@@ -19,7 +19,7 @@ def add_expense():
 
     expense_list = ["Expense", expense_name, expense_category, expense_occurence, expense_amount, obtain_date()]
 
-    with open('budget.csv', 'a') as file:
+    with open('app.csv', 'a') as file:
         writer_object = csv.writer(file)
         writer_object.writerow(expense_list)
         file.close()

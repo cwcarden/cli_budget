@@ -18,7 +18,7 @@ def add_income():
     income_amount = float(input("Please enter the income amount: "))
     income_list = ["Income", income_name, income_category, income_occurence, income_amount, obtain_date()]
 
-    with open('budget.csv', 'a') as file:
+    with open('app.csv', 'a') as file:
         writer_object = csv.writer(file)
         writer_object.writerow(income_list)
         file.close()
